@@ -1,0 +1,67 @@
+/* Reset margins and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Navigation styles */
+nav {
+    width: 100%; /* Make nav full width */
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; /* Center navigation items */
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+/* Main content styles */
+main {
+    float: left;
+    width: 70%; /* Adjusted width for main content */
+    padding: 20px;
+}
+
+/* Footer styles */
+footer {
+    clear: both; /* Clear floats */
+    text-align: center;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Responsive layout */
+@media (max-width: 800px) {
+    nav ul {
+        flex-direction: column; /* Stack nav links on smaller screens */
+    }
+
+    main {
+        width: 100%; /* Make main full width on small screens */
+        float: none; /* Remove float */
+    }
+}
